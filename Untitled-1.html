@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>आज का ऑफर</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #000;
+            overflow: hidden;
+            font-family: "Noto Sans Devanagari", "Mangal", Arial, sans-serif;
+        }
+
+        /* पूरी स्क्रीन */
+        .offer-box {
+            width: 100vw;
+            height: 100vh;
+
+            display: flex;
+            align-items: center;
+
+            background: linear-gradient(
+                135deg,
+                #001f3f,
+                #0066cc,
+                #003d7a
+            );
+
+            overflow: hidden;
+        }
+
+        /* Scrolling Text */
+        .offer {
+            white-space: nowrap;
+
+            font-size: 110px;
+            font-weight: 900;
+
+            color: white;
+
+            text-shadow:
+                5px 5px 0px #000,
+                8px 8px 15px rgba(0,0,0,0.7);
+
+            animation: slide 12s linear infinite;
+        }
+
+        /* आज का ऑफर */
+        .today {
+            color: #ffd700;
+
+            text-shadow:
+                5px 5px 0px #7a5200,
+                8px 8px 15px #000;
+        }
+
+        /* ₹100 */
+        .price {
+            color: #ff3333;
+
+            text-shadow:
+                5px 5px 0px #7a0000,
+                8px 8px 15px #000;
+        }
+
+        /* बिल्कुल फ्री */
+        .free {
+            color: #00ff66;
+
+            text-shadow:
+                5px 5px 0px #006622,
+                8px 8px 15px #000;
+        }
+
+        /* दाईं तरफ से बाईं तरफ */
+        @keyframes slide {
+
+            0% {
+                transform: translateX(100vw);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="offer-box">
+
+        <div class="offer">
+
+            🔥
+            <span class="today">आज का ऑफर!</span>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;
+
+            कोई भी ब्लूटूथ खरीदने पर
+
+            &nbsp;&nbsp;&nbsp;&nbsp;
+
+            <span class="price">
+                ₹100 वाला टेम्पर्ड ग्लास
+            </span>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;
+
+            <span class="free">
+                बिल्कुल फ्री! 🎁
+            </span>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;
+
+            🔥
+
+        </div>
+
+    </div>
+
+</body>
+</html>
